@@ -7,16 +7,23 @@ import static jdk.nashorn.internal.objects.Global.print;
 
 public class T315_SmallSum {
     private static int[] ans;
-    public static List<Integer> countSmaller(int[] nums) {
+    private static int[] index;
+    private static int[] tempindex;
+    public  static List<Integer> countSmaller(int[] nums) {
         List<Integer> result = new ArrayList<Integer>();
         ans = new int[nums.length];
+        index = new int[nums.length];
+        tempindex = new int[nums.length];
         process(nums,0,nums.length-1);
+        for(int i=0;i<nums.length;i++){
+            index[i] = i;
+        }
         for (int j:ans){
             result.add(j);
         }
         return result;
     }
-    public static void process(int[]nums,int l, int r){
+    public  static void process(int[]nums,int l, int r){
         if(l==r)
             return;
         int mid = l+((r-l)>>1);
@@ -24,33 +31,45 @@ public class T315_SmallSum {
         process(nums,mid+1,r);
         merge(nums, mid, l, r);
     }
-    public static void merge(int[] nums, int mid,int l, int r){
+    public  static void merge(int[] nums, int mid,int l, int r){
         int[]temp =new int[r-l+1];
         int i = 0;
+        int x = l;
         //左数组指针
         int p = l;
         //右数组指针
         int q = mid + 1;
+        int count = 0;
         while (p <= mid && q<=r){
-            int count = 0;
-            if(nums[p]<=nums[q]){
+            if(nums[p] <= nums[q]){
+                tempindex[x] = index[p];
                 temp[i++] = nums[p++];
+                x++;
             }else {
-                count = r - q + 1;
+                tempindex[x] = index[q];
+                count = r - q +1;
+                ans[index[q]] += count;
                 temp[i++] = nums[q++];
-                ans[p] += count;
+                x++;
             }
         }
         while (p <= mid){
+            tempindex[x] = index[p];
             temp[i++] = nums[p++];
+            x++;
         }
         while (q <= r){
+            count = r - q + 1;
+            tempindex[x] = index[q];
+            ans[index[q]] += count;
             temp[i++] = nums[q++];
+            x++;
         }
-        for (i = 0; i<temp.length; i++)
+        for (i = 0; i<temp.length; i++){
+            index[l+i] = tempindex[l+i];
             nums[l+i] = temp[i];
+        }
     }
-
     public static void main(String[] args) {
         int [] nums = {5,2,6,1};
         List<Integer> result = countSmaller(nums);

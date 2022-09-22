@@ -14,13 +14,35 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[315]计算右侧小于当前元素的个数.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[315]计算右侧小于当前元素的个数.md" />
+              <option name="frontendQuestionId" value="leetcode.cn315" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[315]计算右侧小于当前元素的个数.java" />
+              <option name="titleSlug" value="count-of-smaller-numbers-after-self" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[剑指 Offer 51]数组中的逆序对.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[剑指 Offer 51]数组中的逆序对.md" />
+              <option name="frontendQuestionId" value="leetcode.cn剑指 Offer 51" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[剑指 Offer 51]数组中的逆序对.java" />
+              <option name="titleSlug" value="shu-zu-zhong-de-ni-xu-dui-lcof" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../LeetCode_src/leetcode/editor/cn/[315]计算右侧小于当前元素的个数.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/../../LeetCode_src/leetcode/editor/cn/doc/content/[315]计算右侧小于当前元素的个数.md" />
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[315]计算右侧小于当前元素的个数.md" />
               <option name="frontendQuestionId" value="leetcode.cn315" />
               <option name="host" value="leetcode.cn" />
-              <option name="path" value="$PROJECT_DIR$/../../LeetCode_src/leetcode/editor/cn/[315]计算右侧小于当前元素的个数.java" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[315]计算右侧小于当前元素的个数.java" />
               <option name="titleSlug" value="count-of-smaller-numbers-after-self" />
             </LeetcodeEditor>
           </value>

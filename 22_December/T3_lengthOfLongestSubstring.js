@@ -29,10 +29,10 @@
 var lengthOfLongestSubstring_2 = function(s) {
     const charMap = new Map();
     let max_length = 0;
-    if(s.length == 0){
+    if(s.length === 0){
         return 0;
     }  
-    for(var end = 0 , start = 0; end< s.length ; end++){
+    for(let end = 0 , start = 0; end< s.length ; end++){
         let c = s.charAt(end);
         if(charMap.has(c)){
             start = Math.max(charMap.get(c) , start);
@@ -47,6 +47,6 @@ var lengthOfLongestSubstring_2 = function(s) {
 
 s1 = "abcabcbb"
 s2 = "aab"
-s3 = "dvdf"
-result = lengthOfLongestSubstring(s1)
+s3 = "pwwkew"
+result = lengthOfLongestSubstring_3(s3)
 console.log(result)

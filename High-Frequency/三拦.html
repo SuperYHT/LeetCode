@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="father">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+    <style>
+        /* 绝对定位实现三拦 */
+        /* .father{
+            width: 100%;
+            height: 800px;
+            position: relative;
+        }
+        .left{
+            width: 300px;
+            height: 800px;
+            position: absolute;
+            background-color: red;
+        }
+        .center{
+            width: auto;
+            height: 800px;
+            margin-left: 300px;
+            margin-right: 300px;
+            background-color: yellow;
+        }
+        .right{
+            width: 300px;
+            height: 800px;
+            background-color: blue;
+            position: absolute;
+            right: 0;
+            top: 0;
+        } */
+
+
+        /* flex实现三栏 */
+        .father{
+            width: 100%;
+            height: 800px;
+            display: flex;
+        }
+        .left{
+            width: 300px;
+            height: 800px;
+   
+            background-color: red;
+        }
+        .center{
+            width: auto;
+            height: 800px;
+            flex: 1;
+            background-color: yellow;
+        }
+        .right{
+            width: 300px;
+            height: 800px;
+            background-color: blue;
+        }
+    </style>
+</body>
+</html>

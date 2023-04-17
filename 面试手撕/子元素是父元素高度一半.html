@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子元素是父元素高度一半</title>
+    <style>
+        .father {
+            background-color: beige;
+            height: 400px;
+            width: 400px;
+            /* 子元素水平垂直居中  */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .son {
+            flex: 1;
+            margin: 25% 20px;
+            padding: 30% 0;
+            height: 0px;
+            background: wheat;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>

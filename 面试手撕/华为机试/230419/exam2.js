@@ -76,9 +76,7 @@ process.stdin.on('end', () => {
     } else {
         console.log('NULL')
     }
-    // const bfs = (node)=>{
 
-    // }
 })
 
 
